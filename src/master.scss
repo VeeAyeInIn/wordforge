@@ -1,0 +1,44 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Utilities
+// @import "styles/variables";
+// @import "styles/functions/functions";
+// @import "styles/functions/functions_color";
+// @import "styles/functions/functions_measurement";
+
+// Components
+@import "styles/components/App";
+@import "styles/components/header";
+@import "styles/components/footer";
+@import "styles/components/workspace/workspace";
+@import "styles/components/workspace/entries_selection";
+@import "styles/components/workspace/entries_container";
+@import "styles/components/workspace/entries_input";
+@import "styles/components/workspace/search_bar";
+@import "styles/components/workspace/entry";
+
+/*
+ * Default index.css styling.
+ * Generated at project creation.
+ */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/*
+ * Additional needs and requirements.
+ */
+
+html {
+  // Highlighting can cause overflow. Overflow will be enabled when needed, such as in Workspace.
+  overflow: hidden;
+}

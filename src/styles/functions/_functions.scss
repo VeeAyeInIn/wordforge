@@ -1,0 +1,6 @@
+/*
+ * Getter for CSS variables
+ */
+@function get($var) {
+  @return var(--#{$var})
+}

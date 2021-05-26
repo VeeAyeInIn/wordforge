@@ -1,0 +1,56 @@
+@import "../variables";
+
+/*
+ * Container for all header items.
+ */
+.header {
+
+  height: height(header);
+  background: primary(color);
+
+  // Align the logo and settings within the header
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // Prevent the spinning settings icon from causing overflow
+  overflow: hidden;
+
+}
+
+/*
+ * An image of the Word Forge logo.
+ */
+.header-logo {
+  height: height(header-logo);
+  margin-left: margin(header-logo);
+}
+
+/*
+ * An image of the settings icon.
+ */
+.header-settings {
+  height: height(header-settings);
+  margin-right: margin(header-settings);
+}
+
+/*
+ * A function that causes the settings icon to rotate from 0 degrees to 360 degrees.
+ */
+@keyframes header-settings-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+ * Runs the above function when the settings icon is hovered over.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .header-settings:hover {
+    animation: header-settings-spin infinite 10s linear;
+  }
+}

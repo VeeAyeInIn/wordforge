@@ -1,0 +1,20 @@
+/*
+ * Easier access to 'height' variables
+ */
+@function height($of) {
+  @return var(--#{$of}-height)
+}
+
+/*
+ * Easier access to 'width' variables
+ */
+@function width($of) {
+  @return var(--#{$of}-width)
+}
+
+/*
+ * Easier access to 'margin' variables
+ */
+@function margin($of) {
+  @return var(--#{$of}-margin)
+}

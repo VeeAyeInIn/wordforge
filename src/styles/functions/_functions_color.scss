@@ -1,0 +1,55 @@
+/*
+ * Easier access to 'primary' variables
+ */
+@function primary($type) {
+  @return var(--primary-#{$type})
+}
+
+/*
+ * Easier access to 'secondary' variables
+ */
+@function secondary($type) {
+  @return var(--secondary-#{$type})
+}
+
+/*
+ * Easier access to 'tertiary' variables
+ */
+@function tertiary($type) {
+  @return var(--tertiary-#{$type})
+}
+
+/*
+ * Easier access to 'success' variables
+ */
+@function success($type) {
+  @return var(--success-#{$type})
+}
+
+/*
+ * Easier access to 'error' variables
+ */
+@function error($type) {
+  @return var(--error-#{$type})
+}
+
+/*
+ * Easier access to 'color' variables
+ */
+@function color($type) {
+  @return var(--#{type}-color)
+}
+
+/*
+ * Easier access to 'variant' variables
+ */
+@function variant($type) {
+  @return var(--#{type}-variant)
+}
+
+/*
+ * Easier access to 'contrast' variables
+ */
+@function contrast($type) {
+  @return var(--#{type}-contrast)
+}

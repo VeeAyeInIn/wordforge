@@ -1,0 +1,37 @@
+@import "../../variables";
+
+.entry {
+  background-color: #f0f0f0;
+  margin: 1vmax;
+  padding: 0 1vmax;
+  border: 0.2vw solid lightslategrey;
+  border-radius: 1vmax;
+  width: 40%;
+}
+
+.entry-word {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entry-delete {
+  color: red;
+  cursor: pointer;
+}
+
+.entry-delete:hover {
+  color: #dd2222;
+}
+
+.entry-definition {
+  max-height: 15vh;
+  overflow: hidden auto;
+  margin: 1%;
+  border-left: 0.25vw solid grey;
+  padding: 0.25vw;
+}
+
+.entry-source {
+  font-style: italic;
+}

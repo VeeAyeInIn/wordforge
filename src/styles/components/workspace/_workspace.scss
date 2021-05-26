@@ -1,0 +1,15 @@
+@import "../../variables";
+
+/*
+ * Container for all workspace items.
+ */
+.workspace {
+  height: height(workspace);
+
+  // Issue with being a React-Bootstrap Container with the fluid option causes small bits of padding.
+  padding: 0;
+}
+
+.wsh {
+  height: height(workspace);
+}

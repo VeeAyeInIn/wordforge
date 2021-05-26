@@ -1,0 +1,58 @@
+/*
+ * Store all CSS variables in a single location for easy management. To change an aspect of the website, only variables
+ * here will have to be changed, accessed via the different functions in the style sheets.
+ */
+@import "functions/functions";
+@import "functions/functions_measurement";
+@import "functions/functions_color";
+
+//@formatter:off
+
+:root {
+
+	/*
+	 * Measurements
+	 */
+
+	--header-height:            100px;
+	--header-logo-height:       calc(var(--header-height) * 0.8);
+	--header-logo-margin:       calc(var(--header-height) / 10);
+	--header-settings-height:   calc(var(--header-height) * 0.8);
+	--header-settings-margin:   calc(var(--header-height) / 10);
+
+	--workspace-height: calc(100vh - var(--header-height) - var(--footer-height));
+
+	--footer-height:             1.5rem;
+	--footer-copyright-height:   1.0rem;
+	--footer-copyright-margin:   0.5rem;
+
+	/*
+	 * Colors
+	 */
+
+	--primary-color:       #666666;
+	--primary-variant:     #999999;
+	--primary-contrast:    #000000;
+
+	--secondary-color:     #AAAAAA;
+	--secondary-variant:   #DDDDDD;
+	--secondary-contrast:  #000000;
+
+	--tertiary-color:      #EEEEEE;
+	--tertiary-variant:    #FFFFFF;
+	--tertiary-contrast:   #000000;
+
+	--success-color:       #00FF00;
+	--success-variant:     #00AA00;
+	--success-contrast:    #FFFFFF;
+
+	--error-color:         #FF0000;
+	--error-variant:       #AA0000;
+	--error-contrast:      #FFFFFF;
+}
+
+:root[data-theme="dark"] {
+	// TODO create new themes
+}
+
+//@formatter:on

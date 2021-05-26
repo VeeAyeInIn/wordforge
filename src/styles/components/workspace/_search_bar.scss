@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.search-bar-container {
+  margin: 0;
+  height: 50px;
+  background: primary(variant);
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.search-bar-form {
+
+}
+
+.search-bar-button {
+  background: tertiary(color);
+}

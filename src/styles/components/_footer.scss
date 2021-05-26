@@ -1,0 +1,17 @@
+@import "../variables";
+
+/*
+ * Container for all footer items.
+ */
+.footer {
+  height: height(footer);
+  background: primary(variant);
+}
+
+/*
+ * Small bit of text providing basic copyright information.
+ */
+.footer-copyright {
+  height: height(footer-copyright);
+  margin-left: margin(footer-copyright);
+}
